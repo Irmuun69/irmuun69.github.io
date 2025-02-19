@@ -1,0 +1,121 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF2F2;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative; /* Add this line */
+    padding: 20px; /* Add padding to the container */
+}
+header {
+    background: #313450;
+    color: #FFF2F2;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #313450 3px solid;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+header nav a {
+    color: #FFF2F2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-left: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Add margin to the table */
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #313450;
+    color: #FFF2F2;
+    border-radius: 5px; /* Add this line to round the edges */
+}
+header nav a {
+    color: #FFF2F2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-left: 20px;
+    transition: font-size 0.3s;
+}
+header nav a:hover {
+    font-size: 25px;
+}
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #FFF2F2;
+    background-color: #313450;
+    text-align: center;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    position: absolute; /* Add this line */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* Increase the width */
+    height: 40px; /* Increase the height */
+    background-size: contain;
+    z-index: 10; /* Ensure the buttons are above other elements */
+}
+
+.swiper-container {
+    width: 100%; /* Ensure the container takes full width */
+    height: 100%; /* Ensure the container takes full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; /* Adjust padding to avoid collision */
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text if any */
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.swiper-pagination {
+    bottom: 10px; /* Adjust the position of the pagination dots */
+}
+
+.photo-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.photo-links a {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.photo-links img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Ensure the images are square */
+    object-fit: cover;
+    border-radius: 5px;
+}
